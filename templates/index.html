@@ -1,0 +1,77 @@
+{% extends 'base.html' %} {% block main %}
+<section class="container py-3">
+  <div class="container-fluid pb-3">
+    <div class="row">
+      <h2 class="h2 text-center col-12 semi-bold-600 main-heading">
+        LEARNEX ACADEMY
+      </h2>
+    </div>
+    <p class="text-center">
+      LearnEx Academy is a virtual learning platform that provides a range of
+      online courses to help individuals improve their skills and knowledge in
+      various areas.LearnEx Academy courses are taught by industry professionals
+      and experts in their respective fields, ensuring that learners receive
+      high-quality instruction. The platform also offers flexible learning
+      options, with courses available on-demand and at the learner's own pace.
+    </p>
+  </div>
+</section>
+<section class="container">
+  <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
+    <div class="col-lg-12 row">
+      <div class="team-member col-md-3">
+        <img
+          class="team-member-img img-fluid rounded-circle p-4"
+          src="{{ url_for('static', filename='img/team-01.jpg') }}"
+          alt="Card image"
+        />
+        <ul
+          class="team-member-caption list-unstyled text-center pt-4 text-muted light-300"
+        >
+          <li>Samantha Johnson</li>
+          <li>Founder</li>
+        </ul>
+      </div>
+      <div class="team-member col-md-3">
+        <img
+          class="team-member-img img-fluid rounded-circle p-4"
+          src="{{ url_for('static', filename='img/team-02.jpg') }}"
+          alt="Card image"
+        />
+        <ul
+          class="team-member-caption list-unstyled text-center pt-4 text-muted light-300"
+        >
+          <li>Laura Hernandez</li>
+          <li>Co-Founder</li>
+        </ul>
+      </div>
+      <div class="team-member col-md-3">
+        <img
+          class="team-member-img img-fluid rounded-circle p-4"
+          src="{{ url_for('static', filename='img/team-03.jpg') }}"
+          alt="Card image"
+        />
+        <ul
+          class="team-member-caption list-unstyled text-center pt-4 text-muted light-300"
+        >
+          <li>Marcus Lee</li>
+          <li>Co-Founder</li>
+        </ul>
+      </div>
+      <div class="team-member col-md-3">
+        <img
+          class="team-member-img img-fluid rounded-circle p-4"
+          src="{{ url_for('static', filename='img/team-04.jpg') }}"
+          alt="Card image"
+        />
+        <ul
+          class="team-member-caption list-unstyled text-center pt-4 text-muted light-300"
+        >
+          <li>Michael Davis</li>
+          <li>Excecutive Officer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

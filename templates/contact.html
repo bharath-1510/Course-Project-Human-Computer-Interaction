@@ -1,0 +1,121 @@
+{% extends 'base.html' %} {% block main %}
+<section class="container py-1" style="margin-top: 5px">
+  <h1
+    class="col-12 col-xl-8 h2 text-left text-primary pt-3"
+    style="margin-bottom: 30px"
+  >
+    Create success campaign with us!
+  </h1>
+
+  <div class="row pb-4">
+    <div class="col-lg-4">
+      <div class="contact row mb-4">
+        <div class="contact-icon col-lg-3 col-3">
+          <div class="py-3 mb-2 text-center border rounded text-secondary">
+            <i class="display-6 bx bx-news"></i>
+          </div>
+        </div>
+        <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
+          <li class="h5 mb-0">Contact 1</li>
+          <li class="text-muted">Michael Davis</li>
+          <li class="text-muted">010-020-0340</li>
+        </ul>
+      </div>
+
+      <div class="contact row mb-4">
+        <div class="contact-icon col-lg-3 col-3">
+          <div
+            class="border py-3 mb-2 text-center border rounded text-secondary"
+          >
+            <i class="bx bx-laptop display-6"></i>
+          </div>
+        </div>
+        <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
+          <li class="h5 mb-0">Contact 2</li>
+          <li class="text-muted">Marcus Lee</li>
+          <li class="text-muted">010-020-0340</li>
+        </ul>
+      </div>
+
+      <div class="contact row mb-4">
+        <div class="contact-icon col-lg-3 col-3">
+          <div
+            class="border py-3 mb-2 text-center border rounded text-secondary"
+          >
+            <i class="bx bx-money display-6"></i>
+          </div>
+        </div>
+        <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
+          <li class="h5 mb-0">Contact 3</li>
+          <li class="text-muted">Laura Hernandez</li>
+          <li class="text-muted">010-020-0340</li>
+        </ul>
+      </div>
+    </div>
+    <form action="/contact_" method="post" class="col-lg-8">
+      <div class="contact-form row">
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingname"
+              name="name"
+              placeholder="Name"
+            />
+            <label for="floatingname light-300">Name</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingemail"
+              name="email"
+              placeholder="Email"
+            />
+            <label for="floatingemail light-300">Email</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingphone"
+              name="phone"
+              placeholder="Phone"
+            />
+            <label for="floatingphone light-300">Phone</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control light-300"
+              rows="8"
+              placeholder="Message"
+              id="floatingtextarea"
+              name="msg"
+            ></textarea>
+            <label for="floatingtextarea light-300">Message</label>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-12 m-auto text-end">
+          <button
+            type="submit"
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}

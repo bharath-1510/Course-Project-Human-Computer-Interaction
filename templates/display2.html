@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block main %}
+<div id="tableContainer" style="margin-top: 50px;margin-bottom: 100px;">
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>{{f1[0]}}</th>
+        <th>{{f1[1]}}</th>
+        <th>{{f1[2]}}</th>
+        <th>{{f1[3]}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in first %}
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.phone }}</td>
+        <td>{{ item.msg }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tbody></tbody>
+  </table>
+</div>
+
+{% endblock %}

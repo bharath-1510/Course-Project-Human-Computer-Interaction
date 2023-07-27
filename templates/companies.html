@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block main %}
+<section class="service-wrapper py-2">
+  <div class="container-fluid pb-3">
+    <div class="row">
+      <h2 class="h2 text-center col-12 py-3 semi-bold-600">
+        COMPANIES STATISTICS
+      </h2>
+      <p class="light-300 text-center">Both Male and Female</p>
+    </div>
+  </div>
+
+  <div class="service-tag py-2 bg-secondary">
+    <div class="col-md-12">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check()"
+          >
+            2019-2020
+          </button>
+        </li>
+        <li class="filter-btn nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check1()"
+          >
+            2020-2021
+          </button>
+        </li>
+        <li class="nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check2()"
+          >
+            2021-2022
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container overflow-hidden py-3">
+  <div
+    class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3"
+    style="display: flex; justify-content: center"
+  >
+    <canvas id="myChart" style="width: 600px; max-width: 400px"></canvas>
+  </div>
+</section>
+
+<section class="tablecontainer" style="margin-bottom: 100px">
+  <div class="row" style="margin-left: 0px; margin-right: 0px">
+    <div class="col-md-6">
+      <div id="tableContainer">
+        <p class="dark-300 text-center">LPA : 8-10</p>
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Company(Placed count)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="tableContainer" class="table1">
+        <p class="dark-300 text-center">LPA : 6-8</p>
+        <table id="myTable1">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Company(Placed count)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{{url_for('static', filename='js/main1.js')}}"></script>
+
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends 'base.html' %} {% block main %}
+<section class="service-wrapper py-2">
+  <div class="container-fluid pb-3">
+    <div class="row">
+      <h2 class="h2 text-center col-12 py-3 semi-bold-600">STATISTICS</h2>
+    </div>
+  </div>
+
+  <div class="service-tag py-2 bg-secondary">
+    <div class="col-md-12">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check()"
+            id="first"
+          >
+            2019-2020
+          </button>
+        </li>
+        <li class="nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check1()"
+            id="second"
+          >
+            2020-2021
+          </button>
+        </li>
+        <li class="nav-item mx-lg-4">
+          <button
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            onclick="check2()"
+            id="third"
+          >
+            2021-2022
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container overflow-hidden py-3">
+  <div
+    class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3"
+    style="display: flex; justify-content: center"
+  >
+    <canvas
+      id="myChart"
+      style="width: 100%; max-width: 400px; height: 400px"
+    ></canvas>
+  </div>
+</section>
+
+<section class="bg-secondary">
+  <div class="container py-2">
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col-lg-2 col-12 text-light align-items-center">
+        <i class="fa-sharp fa-light fa-trophy-star"></i>
+      </div>
+      <div class="col-lg-7 col-12 text-light pt-2">
+        <h3 class="h4 light-300">GENDERWISE STATISTICS</h3>
+        <p class="light-300" id="stat-heading">ALL</p>
+      </div>
+      <div class="col-lg-3 col-12 nav-item dropdown">
+        <button
+          class="nav-link btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+          id="navbarLightDropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          SELECT
+        </button>
+
+        <ul
+          class="dropdown-menu dropdown-menu-light"
+          aria-labelledby="navbarLightDropdownMenuLink"
+        >
+          <li>
+            <button class="dropdown-item" onclick="print(0)">ALL</button>
+          </li>
+          <li>
+            <button class="dropdown-item" onclick="print(1)">MALE</button>
+          </li>
+
+          <li>
+            <button class="dropdown-item" onclick="print(2)">FEMALE</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="tableContainer" style="margin-top: 50px">
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Company</th>
+        <th>LPA</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<button id="prevButton" disabled>Previous</button>
+<button id="nextButton">Next</button>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+{% endblock %}

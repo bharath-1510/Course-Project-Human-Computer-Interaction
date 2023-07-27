@@ -1,0 +1,174 @@
+{% extends 'base.html' %} {% block main %}
+<section class="container py-2">
+  <div class="row projects gx-lg-5">
+    <a
+      href="{{url_for('course_single',code=1)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project datascience Drawing webdevelopment"
+    >
+      <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course1.png') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">Data-Driven Web Design</h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Data-Driven Web Design refers to designing web interfaces and
+            applications that use data analysis and visualization techniques to
+            present information in a user-friendly and engaging way.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="{{url_for('course_single',code=2)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project Python Drawing"
+    >
+      <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course2.jpg') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">
+            Python for Visual Art and Design
+          </h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Python for Visual Art and Design combines the power of programming
+            with the creativity of art and design. It enables artists and
+            designers to create dynamic and interactive visualizations and
+            graphics using Python programming language and related tools.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="{{url_for('course_single',code=3)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project datascience Python webdevelopment"
+    >
+      <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course3.png') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">
+            Full Stack Web Development with Python
+          </h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Full Stack Web Development with Python covers the entire process of
+            building web applications using Python-based frameworks such as
+            Django or Flask.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="{{url_for('course_single',code=4)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project Drawing webdevelopment"
+    >
+      <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course4.png') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">
+            Visual Web Design and Development
+          </h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Visual Web Design and Development refers to the practice of using
+            graphic design principles and tools to create visually appealing and
+            effective web interfaces.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="{{url_for('course_single',code=5)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project datascience"
+    >
+      <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course5.jpg') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">
+            Applied Data Science and Machine Learning
+          </h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Applied Data Science and Machine Learning involves applying data
+            science techniques and machine learning algorithms to real-world
+            problems and data sets.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="{{url_for('course_single',code=6)}}"
+      class="col-sm-6 col-lg-4 text-decoration-none project datascience Python"
+    >
+      <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+        <img
+          class="card-img-top"
+          src="{{ url_for('static', filename='img/course6.jpg') }}"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title light-300 text-dark">
+            Python for Data Science
+          </h5>
+          <p
+            class="card-text light-300 text-dark"
+            style="text-align: justify; font-weight: 500"
+          >
+            Python for Data Science involves using Python programming language
+            and related tools to analyze and extract insights from large and
+            complex data sets.
+          </p>
+          <span class="text-decoration-none text-primary light-300">
+            Read more <i class="bx bxs-hand-right ms-1"></i>
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+{% endblock %}

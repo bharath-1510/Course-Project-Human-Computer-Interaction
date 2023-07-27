@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block main %}
+<section class="container py-5" style="margin-bottom: 100px">
+  <h1
+    class="col-12 col-xl-8 h2 text-left text-primary pt-4"
+    style="margin-bottom: 30px"
+  >
+    Create success campaign with us!
+  </h1>
+  <form action="/final" method="POST">
+    <div class="col-lg-12">
+      <div class="contact-form row">
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingname"
+              name="name"
+              placeholder="Name"
+            />
+            <label for="floatingname light-300">Name</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingemail"
+              name="email"
+              placeholder="Email"
+            />
+            <label for="floatingemail light-300">Email</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingphone"
+              name="phone"
+              placeholder="Phone"
+            />
+            <label for="floatingphone light-300">Phone</label>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control form-control-lg light-300"
+              id="floatingsubject"
+              name="code"
+              value="{{code}}"
+              readonly
+            />
+            <label for="floatingsubject light-300">Code</label>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-12 m-auto text-end">
+          <input
+            type="submit"
+            class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300"
+            value="Submit"
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+{% endblock %}
